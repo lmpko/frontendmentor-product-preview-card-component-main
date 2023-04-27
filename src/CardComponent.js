@@ -1,12 +1,16 @@
 import React from 'react'
 
-import mobileIMG from '/images/image-product-mobile.jpg'
 import cartIMG from '/images/icon-cart.svg'
+import mobileIMG from '/images/image-product-mobile.jpg'
+import desctopIMG from '/images/image-product-desktop.jpg'
 
 const CardComponent = () => {
   return (
     <section className='card'>
-        <img src={mobileIMG} alt=""/>
+        <picture>
+          <source media="(min-width:500px)" srcset={desctopIMG}/>
+          <img srcSet={mobileIMG}/>
+        </picture>
         <aside>
             <span>Perfume</span>
             <h1>Gabrielle Essence Eau De Parfum</h1>
