@@ -5,21 +5,89 @@
 
 
 :root {
-    --primary-color: hsl(30, 38%, 92%),
-    --secondary-color: hsl(158, 36%, 37%),
-    
-    --tertiary-color:  hsl(212, 21%, 14%),
-    --fourthary-color: hsl(228, 12%, 48%),
-    --fifthary-color: hsl(0, 0%, 100%)
+    --primary-color: hsl(30, 38%, 92%);
+    --secondary-color: hsl(158, 36%, 37%);
+
+    --tertiary-color:  hsl(212, 21%, 14%);
+    --fourthary-color: hsl(228, 12%, 48%);
+    --fifthary-color: hsl(0, 0%, 100%);
 }
 
 
-html, body{
+body{
     margin: 0;
+    background-color: var(--primary-color);
 }
 
 body p {
     font-size: 14px;
-    
+    font-family: 'Montserrat', sans-serif;
+    color: var(--fourthary-color);
+    line-height: 25px;
+}
+
+.card{
+    background-color: var(--fifthary-color);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px;
+    border-radius: 15px;
+}
+.card img{
+    border-radius: 15px 15px 0 0;
+}
+
+.card aside{
+    padding: 15px;
+}
+
+.card h1{
+    font-family: 'Fraunces', serif;;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.card button {
+    background-color: var(--secondary-color);
+    color: var(--fifthary-color);
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card button img{
+    padding-right: 15px;
+    border-radius: 0;
+}
+
+.card aside span:first-child{
+    color: var(--fourthary-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+}
+.price div:first-child{
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+    color: var(--secondary-color);
+    padding-right: 25px;
+}
+
+.price div:nth-child(2){
+    color: var(--fourthary-color);
+    text-decoration: line-through;
 }
 
