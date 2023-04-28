@@ -9,7 +9,7 @@ const CardComponent = () => {
     <section className='card'>
         <picture>
           <source media="(min-width:500px)" srcset={desctopIMG}/>
-          <img srcSet={mobileIMG}/>
+          <img srcSet={mobileIMG} alt="image"/>
         </picture>
         <aside>
             <span>Perfume</span>
@@ -21,7 +21,7 @@ const CardComponent = () => {
                 <div>$169.99</div>
             </div>
             <button>
-              <img src={cartIMG} alt=""/>
+              <img src={cartIMG} alt="image"/>
               <span> Add to Cart</span> 
             </button>
         </aside>
